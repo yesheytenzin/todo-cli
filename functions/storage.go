@@ -1,4 +1,4 @@
-package main
+package functions
 
 import (
 	"encoding/json"
@@ -7,5 +7,6 @@ import (
 	"os"
 )
 
-const taskFile = "tasks.json"
+const TasksFile = "tasks.json"
+
 
