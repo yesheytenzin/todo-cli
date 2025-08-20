@@ -1,0 +1,46 @@
+# TODO CLI App - Work Breakdown
+
+1. Project Setup
+   - Initialize a new Go project (`go mod init todocli`)
+   - Create main.go file
+
+2. Define Data Structures
+   - Create `Todo` struct with fields: Task (string), Done (bool)
+   - Initialize a slice `todos []Todo`
+
+3. Core Functions
+   - `add(task string)` → append new todo to list
+   - `list()` → display all todos with index and status
+   - `done(index int)` → mark todo as completed
+   - `delete(index int)` → remove todo by index
+
+4. Persistence
+   - Save todos to `todos.json` using `os.WriteFile`
+   - Load todos from `todos.json` at program start
+
+5. CLI Handling
+   - Parse command-line arguments with `os.Args`
+   - Map commands:
+     * `todo add "task"` → add new todo
+     * `todo list` → list todos
+     * `todo done <index>` → mark done
+     * `todo delete <index>` → delete task
+
+6. Error Handling
+   - Handle missing arguments
+   - Prevent invalid index crashes
+   - Informative error messages
+
+7. Enhancements
+   - Pretty print list with ✅ for done, ⏳ for pending
+   - Allow editing a task
+   - Add clear-all option
+
+8. Testing & Validation
+   - Run sample commands to verify functionality
+   - Test with no file, empty list, and multiple tasks
+
+9. Documentation
+   - Write README with usage examples
+   - Add comments in code
+

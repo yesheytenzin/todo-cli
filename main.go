@@ -1,8 +1,11 @@
 package main
 
-import "github.com/yesheytenzin/todo-cli/cmd"
+import (
+	"github.com/yesheytenzin/todo-cli/cmd"
+)
 
 func main() {
-	cmd.Execute()
+    // Start the CLI
+    cmd.Execute()
 }
 
